@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: black;
+}
+
+/* Header */
+
+header {
+    background-color: #192957;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Product Categories */
+
+.category {
+    margin: 20px 15px;
+}
+
+.category h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/* Product Container */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Product Cards */
+
+.product-card {
+    background-color: white;
+    padding: 22px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Buy Now Button */
+
+button {
+    background-color: #2860ed;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1746c2;
+}
+
+/* Welcome Heading */
+
+.welcome {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/* Order Summary */
+
+.order-summary {
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+    min-height: 130px;
+}
+
+.order-summary h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Success Message */
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+/* Cancellation Message */
+
+.cancel {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+
+@media(max-width: 700px) {
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        width: 95%;
+    }
+
+    .welcome {
+        font-size: 24px;
+    }
+
+}

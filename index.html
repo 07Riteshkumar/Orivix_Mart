@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ORVIX MART - Smart Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <h1>🏪 ORVIX MART</h1>
+        <p>Smart Shopping</p>
+    </header>
+
+
+    <!-- Electronics Products -->
+
+    <section class="category">
+
+        <h2>Electronics Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h3>Laptop</h3>
+                <p>Price: ₹50,000</p>
+                <button onclick="buyProduct('Laptop', 50000)">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Headphones</h3>
+                <p>Price: ₹2,000</p>
+                <button onclick="buyProduct('Headphones', 2000)">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Bluetooth Speaker</h3>
+                <p>Price: ₹1,500</p>
+                <button onclick="buyProduct('Bluetooth Speaker', 1500)">Buy Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Fashion Products -->
+
+    <section class="category">
+
+        <h2>Fashion Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h3>T-Shirt</h3>
+                <p>Price: ₹500</p>
+                <button onclick="buyProduct('T-Shirt', 500)">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Jeans</h3>
+                <p>Price: ₹1,200</p>
+                <button onclick="buyProduct('Jeans', 1200)">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Shoes</h3>
+                <p>Price: ₹2,000</p>
+                <button onclick="buyProduct('Shoes', 2000)">Buy Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Home Products -->
+
+    <section class="category">
+
+        <h2>Home Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h3>Table Lamp</h3>
+                <p>Price: ₹800</p>
+                <button onclick="buyProduct('Table Lamp', 800)">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Wall Clock</h3>
+                <p>Price: ₹700</p>
+                <button onclick="buyProduct('Wall Clock', 700)">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Desk Organizer</h3>
+                <p>Price: ₹400</p>
+                <button onclick="buyProduct('Desk Organizer', 400)">Buy Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Order Summary Section -->
+
+    <h1 class="welcome">Welcome to ORVIX MART!</h1>
+
+    <div class="order-summary" id="orderSummary">
+
+        <h2>Here is your Order Summary.....</h2>
+
+        <p>Your order details will appear here.</p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
